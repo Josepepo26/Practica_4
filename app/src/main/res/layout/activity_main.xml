@@ -25,8 +25,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="255dp"
-        android:layout_height="232dp"
+        android:layout_width="229dp"
+        android:layout_height="184dp"
         android:layout_gravity="center"
         app:srcCompat="@drawable/logo"
         tools:visibility="visible" />
@@ -37,7 +37,8 @@
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:backgroundTint="@color/boton"
-        android:text="Iniciar Sesion" />
+        android:text="Iniciar Sesion"
+        app:cornerRadius="58dp" />
 
     <Button
         android:id="@+id/registro"
@@ -45,6 +46,14 @@
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:backgroundTint="@color/boton"
-        android:text="Registro" />
+        android:text="Registro"
+        app:cornerRadius="58dp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragments"
+        android:name="com.example.practica_4.fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        tools:layout="@layout/fragment_fragment1" />
 
 </LinearLayout>

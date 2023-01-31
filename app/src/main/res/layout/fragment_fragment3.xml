@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_on_background_disabled">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/material_on_background_disabled"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nombre_reg"
+                android:layout_width="269dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="@color/form"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Nombre*"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorLetra"
+                android:textColorHint="@color/colorLetra" />
+
+            <EditText
+                android:id="@+id/apellido_reg"
+                android:layout_width="269dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/form"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Apellido*"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorLetra"
+                android:textColorHint="@color/colorLetra" />
+
+            <EditText
+                android:id="@+id/correo_reg"
+                android:layout_width="269dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/form"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Correo*"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorLetra"
+                android:textColorHint="@color/colorLetra" />
+
+            <EditText
+                android:id="@+id/correorep_reg"
+                android:layout_width="269dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/form"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Repita el correo*"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorLetra"
+                android:textColorHint="@color/colorLetra" />
+
+            <EditText
+                android:id="@+id/contra_reg"
+                android:layout_width="269dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/form"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Contraseña*"
+                android:inputType="textPassword"
+                android:textColor="@color/colorLetra"
+                android:textColorHint="@color/colorLetra" />
+
+            <EditText
+                android:id="@+id/contrarep_reg"
+                android:layout_width="269dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/form"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Repita la contraseña*"
+                android:inputType="textPassword"
+                android:textColor="@color/colorLetra"
+                android:textColorHint="@color/colorLetra" />
+
+            <Button
+                android:id="@+id/registro_bot"
+                android:layout_width="224dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/boton"
+                android:text="Registrarse"
+                app:cornerRadius="58dp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -10,4 +10,5 @@
     <color name="colorLetra">#FFFFFFFF</color>
     <color name="fondo">#620202</color>
     <color name="boton">#FF000000</color>
+    <color name="form">#373737</color>
 </resources>

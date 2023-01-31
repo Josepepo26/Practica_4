@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_on_background_disabled"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/correo"
+            android:layout_width="296dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:background="@color/form"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Correo*"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorLetra"
+            android:textColorHint="@color/colorLetra" />
+
+        <EditText
+            android:id="@+id/contra"
+            android:layout_width="296dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/form"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Contraseña*"
+            android:inputType="textPassword"
+            android:textColor="@color/colorLetra"
+            android:textColorHint="@color/colorLetra" />
+
+        <Button
+            android:id="@+id/acceso"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/boton"
+            android:text="Acceso"
+            app:cornerRadius="58dp" />
+    </LinearLayout>
+
+</FrameLayout>
