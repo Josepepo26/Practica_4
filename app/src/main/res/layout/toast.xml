@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/linearLayout"
+    android:id="@+id/contenedor_toast"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal">
@@ -17,5 +17,6 @@
         android:layout_width="173dp"
         android:layout_height="42dp"
         android:contentDescription="To"
-        android:text="JavaTpoint custom Toast" />
+        android:gravity="center"
+        android:text="Texto" />
 </LinearLayout>
