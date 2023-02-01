@@ -45,6 +45,7 @@
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/boton"
         android:text="Registro"
         app:cornerRadius="58dp" />
@@ -53,7 +54,9 @@
         android:id="@+id/fragments"
         android:name="com.example.practica_4.fragment1"
         android:layout_width="match_parent"
-        android:layout_height="323dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/vacio"
         tools:layout="@layout/fragment_fragment1" />
 
 </LinearLayout>

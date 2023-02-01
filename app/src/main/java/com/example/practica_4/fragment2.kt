@@ -1,10 +1,12 @@
 package com.example.practica_4
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -17,9 +19,12 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class fragment2 : Fragment() {
+    private var listener : FragmentsListener ?= null
+
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +40,24 @@ class fragment2 : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_fragment2, container, false)
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val btnPlus = view.findViewById <Button>(R.id.acceso)
+
+        btnPlus.setOnClickListener { listener?.onClickFragmentLogin() }
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        if (context is FragmentsListener)
+        {listener = context}
+    }
+
+
+    override fun onDetach() {
+        super.onDetach()
+        listener = null
     }
 
     companion object {

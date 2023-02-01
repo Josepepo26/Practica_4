@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/vacio"
     tools:context=".fragment2">
 
     <!-- TODO: Update blank fragment layout -->
@@ -11,15 +12,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/material_on_background_disabled"
+        android:background="@color/vacio"
         android:orientation="vertical">
 
         <EditText
             android:id="@+id/correo"
-            android:layout_width="296dp"
-            android:layout_height="43dp"
+            android:layout_width="322dp"
+            android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/form"
             android:ems="10"
             android:gravity="center"
@@ -30,11 +31,11 @@
 
         <EditText
             android:id="@+id/contra"
-            android:layout_width="296dp"
-            android:layout_height="43dp"
+            android:layout_width="322dp"
+            android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/form"
             android:ems="10"
             android:gravity="center"
@@ -45,10 +46,10 @@
 
         <Button
             android:id="@+id/acceso"
-            android:layout_width="224dp"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/boton"
             android:text="Acceso"
             app:cornerRadius="58dp" />
