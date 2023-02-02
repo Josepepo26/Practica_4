@@ -15,4 +15,10 @@
     <string name="errcorrnocoinc">El correo no coincide</string>
     <string name="errcontrnocoinc">La contraseña no coincide</string>
     <string name="bienvenido">Bienvenido Jose</string>
+    <string name="suscripcion">Suscripción a la newsletter</string>
+    <string name="bienv">Bienvenido</string>
+    <string name="diario">Recibir la newsletter diariamente</string>
+    <string name="semanal">Recibir la newsletter semanalmente</string>
+    <string name="ace">Aceptar</string>
+    <string name="canc">Cancelar</string>
 </resources>

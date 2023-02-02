@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:gravity="end"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/vacio">
+
+        <RadioButton
+            android:id="@+id/botdia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/vacio"
+            android:buttonTint="@color/white"
+            android:text="@string/diario"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLetra" />
+
+        <RadioButton
+            android:id="@+id/botsemana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/vacio"
+            android:buttonTint="@color/white"
+            android:text="@string/semanal"
+            android:textColor="@color/colorLetra" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/botaccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="@color/fondo"
+            android:text="@string/ace"
+            android:textColor="@color/colorLetra"
+            app:cornerRadius="58dp" />
+
+        <Button
+            android:id="@+id/botcanc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/fondo"
+            android:text="@string/canc"
+            android:textColor="@color/colorLetra"
+            app:cornerRadius="58dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

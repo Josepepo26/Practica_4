@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 
-fun Toast.showCustomToast(actv: Activity, texto: String, img: Int,color: String){
+fun Toast.showCustomToast(actv: Activity, texto: String, img: Int, color: Int){
     val layout = actv.layoutInflater.inflate(
         R.layout.toast,actv.findViewById(R.id.contenedor_toast)
     )
@@ -16,7 +16,7 @@ fun Toast.showCustomToast(actv: Activity, texto: String, img: Int,color: String)
     val im = layout.findViewById<ImageView>(R.id.custom_toast_image)
     this.apply {
         setGravity(Gravity.CENTER_VERTICAL, 0 , 40)
-        layout.setBackgroundColor(Color.parseColor(color))
+        layout.setBackgroundResource(color)
         duration=Toast.LENGTH_SHORT
         view = layout
         show()

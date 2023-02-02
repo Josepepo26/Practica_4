@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentFactory
 
 class MainActivity : AppCompatActivity(), FragmentsListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,11 +44,11 @@ class MainActivity : AppCompatActivity(), FragmentsListener {
         var bot = findViewById<Button>(R.id.acceso)
         bot.setOnClickListener {
             if (usu.text.isBlank()||cont.text.isBlank()){
-                Toast(this).showCustomToast(this, getText(R.string.errcampovacio).toString(),R.drawable.nullwarning,"#DCDCDC")
+                Toast(this).showCustomToast(this, getText(R.string.errcampovacio).toString(),R.drawable.nullwarning,R.color.toast1)
             }else if (!usu.text.toString().equals("josepepo26@gmail.com")){
-                Toast(this).showCustomToast(this,getText(R.string.errcorrnocoinc).toString(),R.drawable.errusuariologin,"#F0FFF0")
+                Toast(this).showCustomToast(this,getText(R.string.errcorrnocoinc).toString(),R.drawable.errusuariologin,R.color.toast2)
             }else if (!cont.text.toString().equals("123456")){
-                Toast(this).showCustomToast(this,getText(R.string.errcontrnocoinc).toString(),R.drawable.errpasswlogin,"#F0E68C")
+                Toast(this).showCustomToast(this,getText(R.string.errcontrnocoinc).toString(),R.drawable.errpasswlogin,R.color.toast3)
             }else{
                 startActivity(Intent(this,login_correcto::class.java))
             }
@@ -66,13 +65,15 @@ class MainActivity : AppCompatActivity(), FragmentsListener {
         var bot = findViewById<Button>(R.id.registro_bot)
         bot.setOnClickListener{
             if (nom.text.isBlank()||apell.text.isBlank()||contr.text.isBlank()||corr.text.isBlank()||repcontr.text.isBlank()||repcorr.text.isBlank()){
-                Toast(this).showCustomToast(this, getText(R.string.errcampovacio).toString(),R.drawable.errcampovacioreg,"#FFA07A")
+                Toast(this).showCustomToast(this, getText(R.string.errcampovacio).toString(),R.drawable.errcampovacioreg,R.color.toast4)
             }else if(!corr.text.toString().equals(repcorr.text.toString())){
-                Toast(this).showCustomToast(this,getText(R.string.errcorrnocoinc).toString(),R.drawable.erremailreg,"#F5FFFA")
+                Toast(this).showCustomToast(this,getText(R.string.errcorrnocoinc).toString(),R.drawable.erremailreg,R.color.toast5)
             }else if(!contr.text.toString().equals(repcontr.text.toString())){
-                Toast(this).showCustomToast(this,getText(R.string.errcontrnocoinc).toString(),R.drawable.errcontreg,"#FA8072")
+                Toast(this).showCustomToast(this,getText(R.string.errcontrnocoinc).toString(),R.drawable.errcontreg,R.color.toast6)
             }else{
-
+                val inten = Intent(this,registro_correcto::class.java)
+                inten.putExtra("nombre", nom.text.toString())
+                startActivity(inten)
             }
 
         }

@@ -12,5 +12,11 @@
     <color name="boton">#FF000000</color>
     <color name="form">#373737</color>
     <color name="vacio">#00000000</color>
+    <color name="toast1">#FFA07A</color>
+    <color name="toast2">#F5FFFA</color>
+    <color name="toast3">#FA8072</color>
+    <color name="toast4">#DCDCDC</color>
+    <color name="toast5">#F0FFF0</color>
+    <color name="toast6">#F0E68C</color>
 
 </resources>
