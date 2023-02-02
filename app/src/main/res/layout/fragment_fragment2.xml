@@ -24,7 +24,7 @@
             android:background="@color/form"
             android:ems="10"
             android:gravity="center"
-            android:hint="Correo*"
+            android:hint="@string/correo"
             android:inputType="textEmailAddress"
             android:textColor="@color/colorLetra"
             android:textColorHint="@color/colorLetra" />
@@ -39,7 +39,7 @@
             android:background="@color/form"
             android:ems="10"
             android:gravity="center"
-            android:hint="Contraseña*"
+            android:hint="@string/cont"
             android:inputType="textPassword"
             android:textColor="@color/colorLetra"
             android:textColorHint="@color/colorLetra" />
@@ -51,7 +51,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/boton"
-            android:text="Acceso"
+            android:text="@string/acc"
             app:cornerRadius="58dp" />
     </LinearLayout>
 

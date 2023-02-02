@@ -2,4 +2,17 @@
     <string name="app_name">Practica_4</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log">Iniciar Sesion</string>
+    <string name="reg">Registrarse</string>
+    <string name="correo">Correo*</string>
+    <string name="cont">Contraseña*</string>
+    <string name="repcorr">Repita Correo*</string>
+    <string name="repcont">Repita Contraseña*</string>
+    <string name="nom">Nombre*</string>
+    <string name="apell">Apellido*</string>
+    <string name="acc">Acceso</string>
+    <string name="errcampovacio">Hay campos vacios</string>
+    <string name="errcorrnocoinc">El correo no coincide</string>
+    <string name="errcontrnocoinc">La contraseña no coincide</string>
+    <string name="bienvenido">Bienvenido Jose</string>
 </resources>

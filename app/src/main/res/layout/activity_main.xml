@@ -37,7 +37,7 @@
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:backgroundTint="@color/boton"
-        android:text="Iniciar Sesion"
+        android:text="@string/log"
         app:cornerRadius="58dp" />
 
     <Button
@@ -47,7 +47,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
         android:backgroundTint="@color/boton"
-        android:text="Registro"
+        android:text="@string/reg"
         app:cornerRadius="58dp" />
 
     <androidx.fragment.app.FragmentContainerView

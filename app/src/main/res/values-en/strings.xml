@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Practica_4</string>
+    <string name="hello_blank_fragment">buenas</string>
+    <string name="log">Login</string>
+    <string name="reg">Register</string>
+    <string name="correo">E-Mail*</string>
+    <string name="cont">Pasword*</string>
+    <string name="repcorr">Repit E-Mail*</string>
+    <string name="repcont">Repit Pasword*</string>
+    <string name="nom">Name*</string>
+    <string name="apell">Surname*</string>
+    <string name="acc">Access</string>
+    <string name="errcampovacio">" There are empty fields"</string>
+    <string name="errcorrnocoinc">" E-Mail doesn't match"</string>
+    <string name="errcontrnocoinc">" Password doesn't match"</string>
+    <string name="bienvenido">Welcome Jose</string>
+</resources>
