@@ -1,6 +1,7 @@
 package com.example.practica_4
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
@@ -41,9 +42,15 @@ class registro_correcto : AppCompatActivity() {
             val semana = view.findViewById<RadioButton>(R.id.botsemana)
             val dia = view.findViewById<RadioButton>(R.id.botdia)
 
-
             val acept = view.findViewById<Button>(R.id.botaccept)
             val cancel = view.findViewById<Button>(R.id.botcanc)
+
+            cancel.setOnClickListener {
+                dialog.hide()
+            }
+            acept.setOnClickListener {
+                startActivity(Intent(this,suscripcioncorrecta::class.java))
+            }
         }
 
     }

@@ -14,6 +14,7 @@ fun Toast.showCustomToast(actv: Activity, texto: String, img: Int, color: Int){
     val tex = layout.findViewById<TextView>(R.id.custom_toast_message)
     tex.text=texto
     val im = layout.findViewById<ImageView>(R.id.custom_toast_image)
+    im.setImageResource(img)
     this.apply {
         setGravity(Gravity.CENTER_VERTICAL, 0 , 40)
         layout.setBackgroundResource(color)

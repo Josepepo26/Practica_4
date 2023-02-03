@@ -21,4 +21,6 @@
     <string name="semanal">" Receive the newsletter weekly"</string>
     <string name="ace">Accept</string>
     <string name="canc">Cancel</string>
+    <string name="subcorrecta">Subscription done correctly</string>
+    <string name="titulo">PandaGlu</string>
 </resources>

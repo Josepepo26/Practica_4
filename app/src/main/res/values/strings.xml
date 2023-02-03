@@ -21,4 +21,6 @@
     <string name="semanal">Recibir la newsletter semanalmente</string>
     <string name="ace">Aceptar</string>
     <string name="canc">Cancelar</string>
+    <string name="subcorrecta">Suscripción realizada correctamente</string>
+    <string name="titulo">PandaGlu</string>
 </resources>
